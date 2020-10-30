@@ -10,6 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Storage } from '@ionic/storage';
 
 import { UserData } from './providers/user-data';
+import { SchedulePage } from './pages/schedule/schedule';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { UserData } from './providers/user-data';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit {
+  rootPage:any = SchedulePage
   appPages = [
     {
       title: 'Schedule',
