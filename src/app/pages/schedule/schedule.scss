@@ -4,6 +4,10 @@ ion-fab-button { //ปุ่ม
   
 }
 
+ion-content.background {
+  --background: url(/assets/img/BG2.png) no-repeat center/cover fixed;
+}
+
 .custom-fab {
   width: 50px !important;
   height: 50px !important;
@@ -17,9 +21,9 @@ ion-fab-button { //ปุ่ม
   --background-activated: var(--ion-color-step-250, #ffffff);
 }
 
-body{
-  background-color: #ca7bd6;
-}
+// body{
+//   background-color: #ca7bd6;
+// }
 
 
 ul {list-style-type: none;}
@@ -47,13 +51,13 @@ ul {list-style-type: none;}
   padding-top: 5px;
 
 }
-.daytab{
-  margin-left: 30px;
-  width: 350px;
-  height: 28px;
-  border-radius: 17px;
-  background-color: #fdbebe;
-}
+// .daytab{
+//   margin-left: 30px;
+//   width: 350px;
+//   height: 28px;
+//   border-radius: 17px;
+//   background-color: #fdbebe;
+// }
 #weekdays {
   width: 30px;
   height: 28.7px;
@@ -72,14 +76,14 @@ ul {list-style-type: none;}
 
 
 /* Weekdays (Mon-Sun) */
-.weekdays {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 370px;
-  height: 28px;
-  border-radius: 17px;
-  background-color: #fdbebe;
-}
+// .weekdays {
+//   margin-left: 10px;
+//   margin-right: 10px;
+//   width: 370px;
+//   height: 28px;
+//   border-radius: 17px;
+//   background-color: #fdbebe;
+// }
 
 .weekdays li {
   display: inline-block;
@@ -87,15 +91,15 @@ ul {list-style-type: none;}
   color: #666;
   text-align: center;
   font-size: 18px;
-  font-weight: bold;
   font-family: Cloud;
+  font-weight: bold;
 }
 
 /* Days (1-31) */
 .days {
   margin-top: 30px;
   margin-left: 20px;
-  background: rgb(255, 255, 255);
+//  background: rgb(255, 255, 255);
   margin: 0;
 }
 .days li {
@@ -107,8 +111,8 @@ ul {list-style-type: none;}
   margin-top: 30px;
   color: #777;
   font-size: 12px;
-  font-weight: bold;
   font-family: Cloud;
+  font-weight: bold;
 }
 
 
@@ -124,13 +128,13 @@ ul {list-style-type: none;}
 //   border-radius: 21.9px;
 //   background-color:  #1abc9c;
 // }
-.activi .Elip{
-  padding: 10px;
-  width: 130px;
-  height: 60px;
-  transform: rotate(180deg);
-  background-color: #ffcb5b;
-}
+// .activi .Elip{
+//   padding: 10px;
+//   width: 130px;
+//   height: 60px;
+//   transform: rotate(180deg);
+//   background-color: #ffcb5b;
+// }
 
 .activi li{
   list-style-type: none;
