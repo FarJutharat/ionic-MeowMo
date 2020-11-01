@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { PopoverController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
+import {PopovercomponentPage} from '../popovercomponent/popovercomponent.page'
 
 @Component({
   selector: 'page-schedule',
@@ -13,9 +14,16 @@ export class SchedulePage {
   
   constructor(public router : Router,
     public popoverController: PopoverController,
-    public alertCtrl: AlertController ){  }
+    public alertCtrl: AlertController ,
+    private popover :PopoverController){  }
   
-
+    createPopOver() {
+     this.popover.create({component:PopovercomponentPage,
+    showBackdrop:false}).then((popoverElement)=>{
+      popoverElement.present();
+    })
+    }
+    
   doPrompt() {
     this.alertCtrl.create({
       header:"ประชุม",

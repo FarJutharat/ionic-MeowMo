@@ -1,0 +1,54 @@
+ul {list-style-type: none;}
+
+.block{
+    border-radius: 17px;
+}
+
+ion-title{
+    font-family: Cloud;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    text-align: center; 
+}
+ 
+ header{
+    font-family: Cloud;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+ }
+ li{
+    list-style-type: none;
+    font-family: Cloud;
+    font-size: 14px;
+    margin-left: 15px;
+ }
+
+
+.today div{
+    text-align: left;
+    color: green;
+ }
+
+ div{
+    margin-left: 28px;
+    margin-right: 20px;
+    font-family: Cloud;
+    font-size: 24px;
+    font-style: normal;
+    color: #000000;
+ }
+
+ .delete{
+    font-family: Cloud;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    margin-left: 50px;
+ }
+
+ 

@@ -12,8 +12,8 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
-import {PopovercomponentPageModule} from './popovercomponent/popovercomponent.module'
-
+import {PopovercomponentPageModule} from './pages/popovercomponent/popovercomponent.module'
+//./popovercomponent/popovercomponent.module
 @NgModule({
   imports: [
     BrowserModule,

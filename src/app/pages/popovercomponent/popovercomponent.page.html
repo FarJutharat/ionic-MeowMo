@@ -1,0 +1,49 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>popovercomponent</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-header> 
+  <ion-toolbar color="success"> 
+  <ion-buttons slot="start">
+    <ion-title align ="left">
+  <ion-icon  name="close-outline" style="width: 30px; height: 30px;" ></ion-icon>
+</ion-title> 
+  </ion-buttons>
+
+  <ion-title align ="center">
+  ประชุม
+  </ion-title> 
+
+  <ion-buttons slot="end">
+    <ion-title align ="right">
+      แก้ไข
+      </ion-title> 
+  </ion-buttons>
+  </ion-toolbar>
+  </ion-header> 
+
+<ion-content padding >
+  
+<ion-grid class="block">
+  <ion-row>
+    <ion-col>
+      <header>คำอธิบาย</header>
+      <li>โปรเจคงานวิชาsoftware</li>
+      <header>สถานที่</header>
+      <li>discord</li>
+      <ion-row>
+        <ion-col>
+          <div>10:30</div>
+        </ion-col>
+        <ion-col>
+          <div class="today">วันนี้</div>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <ion-row><ion-col><ion-button shape="round"
+    color="danger" (click)="ClosePopover()" class="delete" >ลบกิจกรรม</ion-button></ion-col></ion-row>
+</ion-grid>
+</ion-content>

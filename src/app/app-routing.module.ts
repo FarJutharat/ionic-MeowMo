@@ -35,10 +35,14 @@ const routes: Routes = [
   },
   {
     path: 'popovercomponent',
-    loadChildren: () => import('./popovercomponent/popovercomponent.module').then( m => m.PopovercomponentPageModule)
+    loadChildren: () => import('./pages/popovercomponent/popovercomponent.module').then( m => m.PopovercomponentPageModule)
+  },
+  {
+    path: 'schedule-delete',
+    loadChildren: () => import('./schedule-delete/schedule-delete.module').then( m => m.ScheduleDeletePageModule)
   }
 ];
-
+//./popovercomponent/popovercomponent.module
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

@@ -1,0 +1,222 @@
+ion-fab-button { //ปุ่ม
+    --background: var(--ion-color-step-150, #fcd855);
+    --background-activated: var(--ion-color-step-250, #ffffff);
+    
+  }
+  
+  ion-content.background {
+    --background: url(/assets/img/BG2.png) no-repeat center/cover fixed;
+  }
+  
+  .custom-fab {
+    width: 50px !important;
+    height: 50px !important;
+    }
+    
+  /*
+   * Material Design uses the ripple for activated
+   * so only style the iOS activated background
+   */
+  .ios ion-fab-button {
+    --background-activated: var(--ion-color-step-250, #ffffff);
+  }
+  
+  // body{
+  //   background-color: #ca7bd6;
+  // }
+  
+  
+  ul {list-style-type: none;}
+  
+  .head {
+    padding: 50px 25px 30px 25px;
+    width: 100%;
+    text-align: center;
+  }
+  .head ul {
+    margin: 0;
+    padding: 0;
+  }
+  .head ul li {
+    color: white;
+    font-size: 40px;
+    font-family: Cloud;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .head .next {
+    float: right;
+    padding-right: 20px;
+    padding-top: 5px;
+  
+  }
+  // .daytab{
+  //   margin-left: 30px;
+  //   width: 350px;
+  //   height: 28px;
+  //   border-radius: 17px;
+  //   background-color: #fdbebe;
+  // }
+  #weekdays {
+    width: 30px;
+    height: 28.7px;
+    font-family: Cloud;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #474343;
+  }
+  
+  
+  
+  
+  /* Weekdays (Mon-Sun) */
+  // .weekdays {
+  //   margin-left: 10px;
+  //   margin-right: 10px;
+  //   width: 370px;
+  //   height: 28px;
+  //   border-radius: 17px;
+  //   background-color: #fdbebe;
+  // }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+    font-size: 18px;
+    font-family: Cloud;
+    font-weight: bold;
+  }
+  
+  /* Days (1-31) */
+  .days {
+    margin-top: 30px;
+    margin-left: 20px;
+  //  background: rgb(255, 255, 255);
+    margin: 0;
+  }
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 12.6%;
+    text-align: center;
+    margin-bottom: 13px;
+    margin-top: 30px;
+    color: #777;
+    font-size: 12px;
+    font-family: Cloud;
+    font-weight: bold;
+  }
+  
+  
+  /* Highlight the "current" day */
+  .days li .active {
+    padding: 10px;
+    background: #1abc9c;
+    border-radius: 21.9px;
+    background-color: rgba(255, 124, 124, 0.79);
+  }
+  // .days li .active .sub{
+  //   border-top:20px;
+  //   border-radius: 21.9px;
+  //   background-color:  #1abc9c;
+  // }
+  // .activi .Elip{
+  //   padding: 10px;
+  //   width: 130px;
+  //   height: 60px;
+  //   transform: rotate(180deg);
+  //   background-color: #ffcb5b;
+  // }
+  
+  .activi li{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #463737;
+    font-family: Cloud;
+    font-weight: bold;
+  }
+  #act{
+    display:grid;
+    margin: 0;
+    margin-left: 40px;
+    grid-template-columns: 1fr 2fr 1fr; /*frคือแบ่งเป็นส่วนๆเต็มหน้าจอ*/
+    gap: 10px; /*ช่องว่างระหว่างกัน*/
+  }
+  .block{
+    width: 106px;
+    height: 90px;
+    border-radius: 29px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+  
+  }
+  .l1{
+    list-style-type: none;
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+  .l2{
+    list-style-type: none;
+    font-size: 6px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+  .l3{
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  
+   
+  
+  $categories: (
+    ionic: var(--ion-color-primary),
+    angular: #ac282b,
+    communication: #8e8d93,
+    tooling: #fe4c52,
+    services: #fd8b2d,
+    design: #fed035,
+    workshop: #69bb7b,
+    food: #3bc7c4,
+    documentation: #b16be3,
+    navigation: #6600cc
+  );
+  
+  // @each $track, $value in map-remove($categories) {
+  //   ion-item-sliding[track='#{$track}'] ion-label {
+  //     border-left: 2px solid $value;
+  //     padding-left: 10px;
+  //   }
+  // }
+  
