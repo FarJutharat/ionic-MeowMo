@@ -24,31 +24,31 @@ export class SchedulePage {
     })
     }
     
-  doPrompt() {
-    this.alertCtrl.create({
-      header:"ประชุม",
-      subHeader:"คำอธิบาย",
-      message: 'โปรเจคงานวิชาsoftware',
-      cssClass: "secondary",
-      buttons:[
-        {
-        text:"แก้ไข",
-        handler:()=>{
-          this.router.navigate(['schedule2']);
-        }
-      },
-      {
-        text:"ลบกิจกรรม",
-        cssClass: "secondary",
-        handler:()=>{
-          this.router.navigate(['schedule2']);
-        }
-      }
-    ]
-    }).then((promptElement)=>{
-      promptElement.present();
-    })
-  }
+  // doPrompt() {
+  //   this.alertCtrl.create({
+  //     header:"ประชุม",
+  //     subHeader:"คำอธิบาย",
+  //     message: 'โปรเจคงานวิชาsoftware',
+  //     cssClass: "secondary",
+  //     buttons:[
+  //       {
+  //       text:"แก้ไข",
+  //       handler:()=>{
+  //         this.router.navigate(['schedule2']);
+  //       }
+  //     },
+  //     {
+  //       text:"ลบกิจกรรม",
+  //       cssClass: "secondary",
+  //       handler:()=>{
+  //         this.router.navigate(['schedule2']);
+  //       }
+  //     }
+  //   ]
+  //   }).then((promptElement)=>{
+  //     promptElement.present();
+  //   })
+  // }
 
 
 
